@@ -3,7 +3,6 @@ from datetime import datetime
 from blog.person.name import Name
 from blog.person.person import Person
 from blog.post import Post
-
 from blog.uuid import UUID
 
 print(

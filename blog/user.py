@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 
-from blog.uuid import UUID
 from blog.person.name import Name
+from blog.uuid import UUID
+
 
 @dataclass
 class User:

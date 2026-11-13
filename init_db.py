@@ -10,8 +10,10 @@ CREATE TABLE IF NOT EXISTS users (
 );
 """
 
+
 def create_schema(connection: sqlite3.Connection) -> None:
     connection.executescript(SCHEMA)
+
 
 if __name__ == "__main__":
     db_path = Path(__file__).parent / "blog.sqlite"

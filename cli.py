@@ -2,10 +2,10 @@ import sqlite3
 from pathlib import Path
 
 from blog.exceptions import UserNotFoundException
-from blog.repositories.users.sqlite import SqliteUsersRepository
-from blog.uuid import UUID
-from blog.user import User
 from blog.person.name import Name
+from blog.repositories.users.sqlite import SqliteUsersRepository
+from blog.user import User
+from blog.uuid import UUID
 
 connection = sqlite3.connect(Path(__file__).parent / "blog.sqlite")
 users_repository = SqliteUsersRepository(connection)
